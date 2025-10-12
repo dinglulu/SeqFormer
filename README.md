@@ -229,13 +229,20 @@ Place the downloaded models under the `model/` directory before running the benc
 
 ## 🔮 SeqFormer Consensus CLI
 
+### Pretrained Models
 
+| Sequencing Platform | Model Download                                               | Save Path                        |
+| ------------------- | ------------------------------------------------------------ | -------------------------------- |
+| **Illumina**        | [Google Drive link](https://drive.google.com/file/d/1Hsn9_nFD6RqBiTzLxSv4WgCoalLa7Tfl/view?usp=drive_link) | `./model/seqformer_Illumina.pth` |
+| **Nanopore (ONT)**  | [Google Drive link](https://drive.google.com/file/d/1MG6zPakV2Cuvp8NZYjCM4BjiwrFgat9U/view?usp=drive_link) | `./model/seqformer_ONT.pth`      |
+
+Place the downloaded models under the `model/` directory before running the benchmark notebooks.
 
 ### Usage
 
 ```
 python seqformer_predict.py \
-  --input ./data/input.fasta \
+  --input ./data/illumina_input.txt \
   --ngs \
   --bsalign-out-dir ./bsalign_tmp \
   --context-len 512 \
@@ -245,7 +252,7 @@ python seqformer_predict.py \
   --num-cpus 8
 ```
 
-当然可以。下面是修改后的 **README 片段**（只替换了 *Input Format* 一节），保持你的排版风格和语气一致，新增了关于三代测序（TGS）与二代测序（NGS）的兼容说明：
+
 
 ------
 
@@ -308,13 +315,7 @@ Probabilities:
 =======================================
 ```
 
-### Notes
 
-- The script automatically removes positions where the most probable character is a gap (`-`).
-- Supported sequencing types:
-  - `--ngs` → Illumina (second-generation)
-  - `--tgs` → Nanopore (third-generation)
-- Internally integrates **BSAlign** for multiple sequence alignment and **SeqFormer** for confidence-based consensus reconstruction.
 
 ## 📘 Citation
 
