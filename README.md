@@ -3,6 +3,7 @@
 <p align="center">
   <img src="/seqFormer.png" alt="Polus Logo" width="1600"/>
 </p>
+
 **SeqFormer** is a deep learning–based encoder–decoder model for **DNA storage sequence reconstruction** and **error probability estimation**.
  It is designed to recover original sequences from noisy sequencing reads and provide base-level confidence scores across DNA storage channels.
 
@@ -322,4 +323,5 @@ Probabilities:
 If you use SeqFormer in your research, please cite this repository once the associated paper or preprint is released.
 
 ------
+
 
