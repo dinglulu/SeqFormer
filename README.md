@@ -223,12 +223,15 @@ model_dict = {
 
 ### Pretrained Models
 
-| Sequencing Platform | Model Download                                               | Save Path                        |
-| ------------------- | ------------------------------------------------------------ | -------------------------------- |
-| **Illumina**        | [Google Drive link](https://drive.google.com/file/d/1Hsn9_nFD6RqBiTzLxSv4WgCoalLa7Tfl/view?usp=drive_link) | `./model/seqformer_Illumina.pth` |
-| **Nanopore (ONT)**  | [Google Drive link](https://drive.google.com/file/d/1MG6zPakV2Cuvp8NZYjCM4BjiwrFgat9U/view?usp=drive_link) | `./model/seqformer_ONT.pth`      |
+| Sequencing Platform | Quality Input | Model Download                                               | Save Path                               |
+| ------------------- | ------------- | ------------------------------------------------------------ | --------------------------------------- |
+| **Illumina**        | With quality  | [Google Drive link](https://drive.google.com/file/d/14BzOdOLtsDdHoQ5ZcWc5YIcaNKmBxB5Q/view?usp=drive_link) | `./model/seqformer_Illumina_qual.pth`   |
+| **Illumina**        | No quality    | [Google Drive link](https://drive.google.com/file/d/1k6O-drtQmPFfLFHnyUxYuwJifhTAUL_n/view?usp=drive_link) | `./model/seqformer_Illumina_noqual.pth` |
+| **Nanopore (ONT)**  | With quality  | [Google Drive link](https://drive.google.com/file/d/1rI_ZJsALAqxACaNvNwPdDwi7_oiMdcmO/view?usp=drive_link) | `./model/seqformer_ONT_qual.pth`        |
+| **Nanopore (ONT)**  | No quality    | [Google Drive link](https://drive.google.com/file/d/1H8Sh8QKSH_j-Db_oraFHwpMp8wwz-e_y/view?usp=drive_link) | `./model/seqformer_ONT_noqual.pth`      |
 
 Place the downloaded models under the `model/` directory before running the benchmark notebooks.
+To use a no-quality model, set `disable_qual=True` when creating or calling the SeqFormer predictor.
 
 ------
 
@@ -238,12 +241,15 @@ Place the downloaded models under the `model/` directory before running the benc
 
 ### Pretrained Models
 
-| Sequencing Platform | Model Download                                               | Save Path                        |
-| ------------------- | ------------------------------------------------------------ | -------------------------------- |
-| **Illumina**        | [Google Drive link](https://drive.google.com/file/d/1Hsn9_nFD6RqBiTzLxSv4WgCoalLa7Tfl/view?usp=drive_link) | `./model/seqformer_Illumina.pth` |
-| **Nanopore (ONT)**  | [Google Drive link](https://drive.google.com/file/d/1MG6zPakV2Cuvp8NZYjCM4BjiwrFgat9U/view?usp=drive_link) | `./model/seqformer_ONT.pth`      |
+| Sequencing Platform | Quality Input | Model Download                                               | Save Path                               |
+| ------------------- | ------------- | ------------------------------------------------------------ | --------------------------------------- |
+| **Illumina**        | With quality  | [Google Drive link](https://drive.google.com/file/d/14BzOdOLtsDdHoQ5ZcWc5YIcaNKmBxB5Q/view?usp=drive_link) | `./model/seqformer_Illumina_qual.pth`   |
+| **Illumina**        | No quality    | [Google Drive link](https://drive.google.com/file/d/1k6O-drtQmPFfLFHnyUxYuwJifhTAUL_n/view?usp=drive_link) | `./model/seqformer_Illumina_noqual.pth` |
+| **Nanopore (ONT)**  | With quality  | [Google Drive link](https://drive.google.com/file/d/1rI_ZJsALAqxACaNvNwPdDwi7_oiMdcmO/view?usp=drive_link) | `./model/seqformer_ONT_qual.pth`        |
+| **Nanopore (ONT)**  | No quality    | [Google Drive link](https://drive.google.com/file/d/1H8Sh8QKSH_j-Db_oraFHwpMp8wwz-e_y/view?usp=drive_link) | `./model/seqformer_ONT_noqual.pth`      |
 
 Place the downloaded models under the `model/` directory before running the benchmark notebooks.
+To use a no-quality model, set `disable_qual=True` when creating or calling the SeqFormer predictor.
 
 ### Usage
 
