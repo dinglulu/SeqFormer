@@ -12,7 +12,7 @@ from spoa import poa
 from tqdm import tqdm
 from scheduler import linear_warmup_cosine_decay
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
-from model_v2 import Model_v2
+from model_v2_fix import Model_v2
 from p_tqdm import p_map
 from data_preprocess import encode_base_seq, qual_convertion
 
